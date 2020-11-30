@@ -1,12 +1,12 @@
- function fill(N, value) {
-    var N;
+    var N;
+function fill(N, value) {
     var arr = [];
-    for (i = 0; i < N; i++) {
+    for (i = 0; i < N-1; i++) {
         arr[i] = value;
         arr.push(arr[i]);
     }
     return arr;
 }
 
-fill(4, 5);
-console.log(fill(4, 5));
+fill(4, 8);
+console.log(fill(4, 8));
